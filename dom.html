@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 50px;
+            padding: 10px;
+        }
+        .specialArticle h3{
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+           <article>
+               <h3>article-1</h3>
+               <p class="author">authors-1</p>
+               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro tempore perspiciatis iure, officia accusamus soluta! Ipsa minima quibusdam, sunt amet accusamus, incidunt laudantium consequatur, laborum exercitationem laboriosam suscipit veritatis.</p>
+           </article>
+           <article class="specialArticle">
+               <h3>article-2</h3>
+               <p class="author">authors-2</p>
+               <p class="description">Dolores, dignissimos aut tempora quasi, error unde possimus, accusamus temporibus atque aliquid in quo officia velit assumenda eos perspiciatis magnam. Quasi velit impedit id laborum iste, non earum repudiandae dignissimos!</p>
+           </article>
+           <article class="specialArticle">
+               <h3>article-3</h3>
+               <p class="author">authors-3</p>
+               <p class="description">Ex atque quam sequi tempora nesciunt maxime accusamus vel! Eum quod expedita cumque voluptate, vitae ullam nostrum eaque eius, culpa, facilis pariatur nihil nobis quisquam consequatur fuga delectus numquam nemo?</p>
+           </article>
+        </section>
+
+        <section>
+            <h3>Exploring dom</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, vero!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p id="first">learning javascript</p>
+            <p>learning javascript</p>
+            <p>learning javascript</p>
+            <p>learning javascript</p>
+        </section>
+    </main>
+    <script>
+        /*console.log(document.body);
+        var first = document.getElementById('first');
+        first.style.color = 'green';
+        first.style.backgroundColor = 'gray';
+        first.style.color = 'pink';
+        first.style.fontSize = '20px';*/
+
+       /* var author = document.getElementsByClassName('author');
+        //console.log(author);
+        for(i = 0; i < author.length; i++){
+           var element = author[i];
+            //console.log(element);
+            console.log(element.innerHTML);
+            element.innerHTML = 'Lekhok-' + (i+1);  
+            element.style.backgroundColor = 'lightgreen';
+            element.style.margin = '10px';
+            element.style.color = 'red';
+        }*/
+        document.body.style.backgroundColor = 'lightblue';        var author = document.querySelectorAll('.special h3');
+        //console.log(author);
+        for(i = 0; i < author.length; i++){
+           var element = author[i];
+            //console.log(element);
+            console.log(element.innerHTML);
+            element.innerHTML = 'Lekhok-' + (i+1);  
+            element.style.backgroundColor = 'lightgreen';
+            element.style.margin = '10px';
+            element.style.color = 'red';
+        }
+
+
+    </script>
+</body>
+</html>
