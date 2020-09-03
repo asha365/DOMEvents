@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat sint mollitia assumenda dolores veniam cupiditate corrupti obcaecati, facilis consequatur facere blanditiis quae natus. Fugiat vel modi delectus quam quia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat sint mollitia assumenda dolores veniam cupiditate corrupti obcaecati, facilis consequatur facere blanditiis quae natus. Fugiat vel modi delectus quam quia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat sint mollitia assumenda dolores veniam cupiditate corrupti obcaecati, facilis consequatur facere blanditiis quae natus. Fugiat vel modi delectus quam quia.</p>
+    <h1 onclick="console.log('javascript')">Learning javascript</h1>
+    <h1 onclick="alert('Asha Afrin')">Exploring Events</h1>
+    <button onclick="alert(50)">Click Me</button>
+
+    <!--Right way--->
+    <button onclick="handleClick()">Click Hare</button>
+    <button onmousemove="handleClick()">Click More</button>
+    <button onmousedown="handleClick()">Click More2</button>
+  
+  <!---add event listener using javascript-->
+
+  <h1>Specific event handler add</h1>
+  <button>See More-0</button>
+  <button  id="second">See More-1</button>
+  <button>See More-2</button> 
+  <button id="lastPerson">See More-3</button>
+
+  
+  
+  <script>
+      //third step
+    document.getElementById('lastPerson').addEventListener('click',function(){
+        document.body.style.color = 'tomato';
+    })
+
+
+        function handleClick(){
+            console.log('some one click me');
+           // console.log(new Date());
+        }
+
+        //add event listener using javascript
+        //function handleClickTwo(){
+         //   document.body.style.backgroundColor = 'orange';
+        //}
+
+        //const secondButton = document.getElementById('second');
+        //secondButton.onclick = function() {
+        //   console.log('second person clicked');
+       // } 
+
+       //secondButton.addEventListener('click', handleClickTwo);
+       //secondButton.onclick = handleClickTwo;
+            
+        
+    </script>
+
+
+</body>
+</html>
